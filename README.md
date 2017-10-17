@@ -3,7 +3,7 @@ LINEとWatson Conversationを使ったbotサンプル
 
 bot開発を行う上で、今やLINEは外せないプラットフォームとなりました。ここではbotの高速プロトタイプのためにNode-REDとWatsonを活用した開発手順を記します。
 
-![完成図](img/IMG_3881.PNG)
+![完成図](img/IMG_3881.png)
 
 
 手順の流れ概要
@@ -45,7 +45,7 @@ Watson ConversationのWorkplace画面が表示されるのでimportボタンか�
 
 予めgit cloneでこちらのリポジトリをクローンあるいはダウンロードしたらworkspace-okayamabot.jsonを指定してimportしてください。
 
-<img src="img/import_workplace.png" width="250px">
+<img src="img/import_workplace.png" width="300px">
 
 ## 3. LINEの準備
 
