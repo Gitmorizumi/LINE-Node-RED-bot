@@ -2,6 +2,7 @@
 LINEとWatson Conversationを使ったbotサンプル
 
 bot開発を行う上で、今やLINEは外せないプラットフォームとなりました。ここではbotの高速プロトタイプのためにNode-REDとWatsonを活用した開発手順を記します。
+
 ![完成図](img/IMG_3881.PNG)
 
 
@@ -39,11 +40,12 @@ Watson ConversationサービスのGUIをLaunchします。
 ![launch](img/launch_conversation.png)
 
 Watson ConversationのWorkplace画面が表示されるのでimportボタンからimportを行います。
-![import](img/import_button.png)
+
+<img src="img/import_button.png" width="250px">
 
 予めgit cloneでこちらのリポジトリをクローンあるいはダウンロードしたらworkspace-okayamabot.jsonを指定してimportしてください。
-![importworkplace](img/import_workplace.png)
 
+<img src="img/import_workplace.png" width="250px">
 
 ## 3. LINEの準備
 
@@ -102,14 +104,17 @@ return msg
 
 - workspace_idの確認方法
 Work ConversationのWorkspaceをlaunchした後に出てくる各Workspaceのドットメニューをクリックするとメニューが表示され、View detailsで確認できます。
-![workspaceid](img/workspaceid.png)
+
+<img src="img/workspaceid.png" width="250px">
 
 サービス資格情報はダッシュボードから確認できます。非常にわかりにくいので注意してください。
 
 ![credential](img/credential.png)
 
 次にConversationのプロパティを以下のように設定します。Workspace IDは上述した箇所から同じものの値をコピーしてください。
-![property](img/conversation_property.png)
+
+<img src="img/conversation_property.png" width="250px">
+
 
 Watsonから返答されたメッセージをLINEにPOSTするための処理としてfunction<img src="img/function2.png" width="200px">を以下のようにコードを記述します。
 Bearer xxxxxxはLINE developer で確認したトークンです。（手順3.で使用したもの）
