@@ -80,8 +80,9 @@ return msg
 functionやconversationのノードをドラッグ・アンド・ドロップして図のように用意する。
 ![line-conversation](img/line-conversation.png)
 
-まずはLINEからのポストリクエストを受けてWatson Conversationに投げるための処理を行います。
-以下のようにコードを記述します。
+まずはLINEからのポストリクエストを受けてWatson Conversationに投げるための処理をfunction<img src="img/function1.png" width="200px">
+で行います。以下のようにコードを記述します。
+
 
 ```js
 var event = msg.payload["events"][0];
@@ -110,7 +111,7 @@ Work ConversationのWorkspaceをlaunchした後に出てくる各Workspaceのド
 次にConversationのプロパティを以下のように設定します。Workspace IDは上述した箇所から同じものの値をコピーしてください。
 ![property](img/conversation_property.png)
 
-Watsonから返答されたメッセージをLINEにPOSTするための処理としてfunctionを以下のようにコードを記述します。
+Watsonから返答されたメッセージをLINEにPOSTするための処理としてfunction<img src="img/function2.png" width="200px">を以下のようにコードを記述します。
 Bearer xxxxxxはLINE developer で確認したトークンです。（手順3.で使用したもの）
 
 ```js
