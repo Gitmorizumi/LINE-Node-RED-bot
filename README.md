@@ -33,7 +33,7 @@ Watsonの会話の作り方の参考はこちらにいくつかご紹介しま�
 Watson Conversationは会話をインポートすることができます。
 
 まずはダッシュボードからConversationのサービスをクリック。
-![dashboard](img/dash_board.PNG)
+![dashboard](img/dash_board.png)
 
 
 Watson ConversationサービスのGUIをLaunchします。
